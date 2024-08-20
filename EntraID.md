@@ -83,13 +83,13 @@ public class SecurityConfig {
 }
 ```
 
-### Step 6: Run Your Application
-Start your Spring Boot application and navigate to `http://localhost:8080`. You should be redirected to the Azure AD login page. After logging in, you should be redirected back to your application and authenticated.
+```gradle
+implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+implementation 'org.springframework.boot:spring-boot-starter-security'
+implementation 'org.springframework.boot:spring-boot-starter-web'
+implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+```
 
-### Summary
-1. **Register your application** in Azure AD.
-2. **Configure authentication** and add a client secret.
-3. **Update your Spring Boot application** properties with the Azure AD details.
-4. **Configure security** in your Spring Boot application using `WebSecurityConfigurerAdapter`.
+
 
 This should set up Azure AD authentication for your Spring Boot application.
